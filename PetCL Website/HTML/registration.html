@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>PetCL Registration</title>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/registrationstyle.css">
+    <link rel="icon" type="image/icon" href="../Images/plogo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <div id="footerResponsive" class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" id="indexnav"> Homepage </a> &nbsp; &nbsp; &nbsp;     
+                </li>
+                <li class="nav-item">
+                    <a href="registration.html" id="registernav"> Register </a> &nbsp; &nbsp; &nbsp;     
+                </li>
+                 <li class="nav-item">
+                    <a href="blog.html" id="blognav"> Blog </a> &nbsp; &nbsp; &nbsp;    
+                </li>
+                 <li class="nav-item">
+                    <a href="services.html" id="ourservicesnav"> Our Services </a> &nbsp; &nbsp; &nbsp; &nbsp;   
+                </li>
+                 <li class="nav-item">
+                    <a href="team.html" id="ourteamnav"> Our Team </a> &nbsp; &nbsp; &nbsp;    
+                </li>
+                 <li class="nav-item">
+                    <a href="gallery.html" id="gallerynav"> Gallery </a> &nbsp; &nbsp; &nbsp;    
+                </li>
+                 <li class="nav-item">
+                    <a href="contactme.html" id="contactusnav"> Contact Us </a> &nbsp; &nbsp; &nbsp; 
+                </li>
+                <li>
+                    <form action="https://www.google.com/search" method="GET" name="search">
+                         <input type="text" name="q" placeholder="Type to search">
+                         <input type="submit" name ="search" value="Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
+     </div>
+     </nav>
+
+
+   <main>
+    <h1> PetCL </h1> <br>
+   	<h2> Please fill the registration form down below </h2>
+
+	<form action="thanks.html" method="POST"  onsubmit="return checking(), datecheck();">
+		
+	
+		<label for="name"> Name </label>
+        <input type="text" name="name" id="name"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
+        <label for="surname"> Surname </label>
+        <input type="text" name="surname" id="surname"> <br> <br> 
+
+        <label for="Email"> E-mail </label>
+        <input type="Email" name="Email" id="Email"> <br> <br> 
+
+        <label for="password"> Password </label>
+        <input type="password" name="password" id="password"> <br> <br>  
+
+        <label for="Birthdate"> Birthdate </label>
+        <input type="text" name="Birthdate" id="Birthdate" placeholder="form: dd/mm/yyyy"> <br> <br>
+
+        <label for="phone"> Phone Number </label>
+        <input type="tel" name="phone" id="phone" placeholder="ex: 01234567890"> <br> <br>
+    
+    <div id="genderbox">
+        <label for="gender"> Gender </label> <br>
+        <input type="radio" name="gender" id="gender" value="male"> Male <br>
+        <input type="radio" name="gender" id="gender2" value="female"> Female 
+    </div> <br>    
+    
+        <label for="infobox"> Info </label>
+        <textarea style="resize:none; width:300px; height:150px;" maxlength="500" name="infobox" id="infobox" 
+               placeholder="Tell us about you & your pet briefly (500 char. max)"></textarea> <br> <br>
+    
+
+        <label id=fileToUpload> Photo </label>
+		<input type="file" name="fileToUpload" id="photoupload"> <br> <br>
+
+    <div id="checkboxes">
+		<label id="interests"> What do you like? </label> <br> <br>
+        
+        <input type="checkbox" id="cb1">
+		<label for="cb1"> Animals & Pets </label> <br>
+        <input type="checkbox" id="cb2">
+		<label for="cb2"> Cars & Vehicles </label> <br>
+        <input type="checkbox" id="cb3">
+		<label for="cb3"> Comedy  </label> <br>
+        <input type="checkbox" id="cb4">
+		<label for="cb4"> Education </label> <br>
+        <input type="checkbox" id="cb5">
+		<label for="cb5"> Films & Cinema </label> <br>
+        <input type="checkbox" id="cb6">
+		<label for="cb6"> Gaming </label> <br>
+		<input type="checkbox" id="cb7">
+		<label for="cb7"> Music </label>  <br>
+        <input type="checkbox" id="cb8">
+		<label for="cb8"> TV Series </label> <br> 
+        <input type="checkbox" id="cb9">
+		<label for="cb9"> Science & Technology </label> <br>
+        <input type="checkbox" id="cb10">
+		<label for="cb10"> Sport </label> 
+	</div>   
+
+        <br> <br> 
+        <input onclick="checking(); datecheck();" type="submit" value="Register" name="registerbutton">
+	</form>
+    </main>
+
+   <footer class="footer mt-auto py-3">
+      <div class="container">
+        <p id="pfooter"> If you have any questions, feel free to <a href="../HTML/contactme.html">Contact Us</a> &copy; 2020-2020 Muzaffer Verdil. All rights reserved. </p>
+      </div>
+   </footer>  
+
+
+
+
+<script type="text/javascript">
+
+
+    	function checking() {
+
+    	var letters = /^[A-Za-z]/
+
+    	var validemail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+    	var validpassword = /^(?=.*\d)(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/
+
+
+    	var isValidName = letters.test(document.getElementById("name").value);	
+
+        if(!isValidName){
+    			alert("Please enter your name.");
+    			return false;
+    			}
+
+
+    	var isValidSurname = letters.test(document.getElementById("surname").value);	
+
+        if(!isValidSurname){
+    			alert("Please enter your surname.");
+    			window.history.back();
+    			return false;
+    			}
+
+
+    	var isValidEmail = validemail.test(document.getElementById("Email").value);
+
+        if(!isValidEmail) {
+                alert("Please enter your email.");
+                window.history.back();
+                return false;
+                }
+
+
+        var isValidPassword = validpassword.test(document.getElementById("password").value);
+
+    	if(!isValidPassword) {
+    		    alert("Please enter a password with length of 8-16 characters and including:\nAt least one uppercase letter\nAt least one digit\nAt least one special character");
+    		    return false;
+    	}           		
+
+
+    	var isValidPhone = document.getElementById("phone").value;
+    			
+    	if(isValidPhone.length != 11) {
+    		    alert("Please enter the correct phone number of yours.");
+    		    window.history.back();
+    		    return false;
+    	        } 
+    	}	
+
+    function datecheck() {
+    
+    var regexdate = /^(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$/
+
+    var datechck = regexdate.test(document.getElementById("Birthdate").value);
+
+    if(!datechck) {
+    	alert("Please Enter your birthdate in form of DD/MM/YYYY.");
+        return false;
+    }
+
+    else {
+    	
+    var parts = Birthdate.value.split("/");
+    var day = parseInt(parts[0], 10);
+    var month = parseInt(parts[1], 10);
+    var year = parseInt(parts[2], 10);
+
+    if(year < 1903 || year > 2013 || month == 0 || month > 12) {
+    	alert("You must be from another timeline or too young.\n(Hint: Oldest living person is Kane Tanaka at age 117, so where it begins.)");
+        return false;
+    }
+
+    var monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
+    
+    if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+        monthLength[1] = 29;
+        
+    }
+    
+    return day > 0 && day <= monthLength[month - 1];
+    }
+     
+    }
+
+   
+
+</script>
+</body>
+</html>

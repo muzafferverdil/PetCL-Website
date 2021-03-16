@@ -1,0 +1,276 @@
+body {
+	background-color: lightgreen;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0.5em;
+	position: relative;
+  color: #ff3300;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+main { 
+	background-image: url("../Images/wallpaper.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+	margin: 1em;
+	text-align: center;
+}
+
+nav {
+  display: inline-block;
+  margin: 1em;
+	background-color: #708090;
+	border-radius: 4px;
+	border-style: groove;
+	border-color: black;
+  position: relative;
+	top: 0.6em;
+  font-size: 1.5em;
+	font-family: sans-serif;
+	padding: 100px auto;
+  text-align: center;
+}
+
+nav a {
+	color: black;
+  position: relative;
+  top: 0.9em;
+} 
+
+a[id=registernav] {
+	color: black;
+	font-size: 1.3em;
+  background-color: #ff3300;
+	border: 2px;
+	border-style: groove;
+	border-radius: 4px;
+	text-align: center;
+  position: relative;
+  top: 0.6em;
+}
+
+label {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+input[id=name] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+}
+
+input[id=surname] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+}
+
+input[id=Email] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 30%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    position: relative;
+    left: 0.5em;
+}
+
+input[id=password] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+}
+
+input[id=Birthdate] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    margin-left: 5px;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+}
+
+input[id=phone] {
+	  color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    position: relative;
+    left: -1.2em;
+}
+
+label[for=phone] {
+    position: relative;
+    left: -1.2em;
+}
+
+div[id=genderbox] {
+	  color: #000000;
+  	font-size: 15px;
+  	width: 20%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    text-align: center;
+    position: relative;
+    left: 1em;
+}
+
+label[for=infobox] {
+    position: relative;
+    top: -9em;
+}
+
+textarea {
+  	color: #000000;
+  	font-size: 15px;
+  	width: 40%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+}
+
+input[id=photoupload]{
+	  color: #000000;
+  	font-size: 15px;
+  	width: 19%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    text-align: center;
+}
+
+div[id=checkboxes] {
+	color: #000000;
+  	font-size: 15px;
+  	width: 40%;
+    padding: 2px 3px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #8fbc8f;
+    text-align: center;
+    
+}
+
+ input[name=registerbutton] {
+  	display: inline-block;
+  	background-color: #ff3300;
+  	padding: 1px;
+  	font-weight: 600;
+  	font-size: 20px;
+  	border: 2px solid #ff3300;
+  	border-radius: 8px;
+  	box-shadow: 3px 3px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+  }
+
+footer {
+  	background-color: #000000;
+  	color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+
+input[name=search] {
+  display: inline-block;
+  background-color: #ff3300;
+  margin: 1px;
+  padding: 1px;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #ff3300;
+  border-radius: 8px;
+  box-shadow: 3px 3px;
+  cursor: pointer;
+}
+
+input[name=q] {
+  background-color: #8fbc8f;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  width: 55%;
+  padding: 5px 10px;
+  margin: 20px 0;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid green;
+  border-bottom: 3px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
